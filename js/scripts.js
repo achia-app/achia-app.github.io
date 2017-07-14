@@ -38,7 +38,10 @@ $(document).ready(function() {
         schemaLink +
         '" class="simple-button"><span class="icon flaticon-cross8"></span>Accept Invite</a>'
     );
+    $(".section-image img").css("filter", "brightness(100%)");
   }
+
+  /// end invite code handling
   $("#main-nav").sidr();
   $("#fullpage").fullpage({
     verticalCentered: true,
