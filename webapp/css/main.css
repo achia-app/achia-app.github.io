@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.slider-container {
+  width: 100%;
+  height: 300px;
+}
+
+.slider-single {
+  background-color: #f52;
+  color: #fff;
+  width: 85%;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center center;
+}
+
+.slider-single h4 {
+  text-shadow: 1px 1px 0px rgba(246, 59, 49, 1);
+  color: white;
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: url('https://az616578.vo.msecnd.net/files/2016/09/09/636090385212701167-271046106_collage.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.navbar {
+  background-color: yellow;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+header,
+header div,
+main,
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  height: 10%;
+  background-color: #1b9c5c;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  flex-direction: row;
+  padding: 0px 20px;
+}
+
+header img {
+  width: 70%;
+  height: 70%;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+main {
+  height: 85%;
+}
+
+footer {
+  height: 5%;
+  background-color: #1b9c5c;
+  font-size: 0.7em;
+  color: white;
+  font-style: italic;
+}
+
+form {
+  width: 80%;
+}
+
+.black-transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+h2 {
+  color: red;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+em {
+  color: #9b9b9b;
+}
+
+h3 {
+  color: #1b9c5c;
+}

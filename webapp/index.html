@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>aChia - Web App Firstlook</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/loading.css">
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div style="flex:2">
+      <a href="../"><img src="../images/achia.png" /></a>
+    </div>
+    <div style="flex:8">
+      aChia app
+    </div>
+  </header>
+  <main>
+    <form>
+      <h2>Nhập liệu nhanh để quản lý tiền <br/> Team building Appota tầng 6</h2>
+      <h3>Người đứng tên</h3>
+      <input class="form-group form-control" placeholder="Hãy điền tên bạn vào đây" id="name" />
+      <h3>Nội dung thu / chi</h3>
+      <em>Nếu thu / chi này không đủ cả team thì ghi chú lại nhé.</em>
+      <input class="form-group form-control" placeholder="Thu quỹ để ... / Chi tiền ..." id="description" />
+      <h3>Số tiền</h3>
+      <input class="form-group form-control" placeholder="Ghi số tiền tổng hoặc số tiền mỗi người" id="amount" />
+      <input class="form-group form-control btn btn-danger" type="submit" value="Gửi" />
+    </form>
+  </main>
+  <footer>
+    Thêm site vào Reading list để sử dụng offline. (Click để tìm hiểu thêm)
+  </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+  </script>
+  <script src="js/vendor/offline.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
