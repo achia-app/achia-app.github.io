@@ -15,15 +15,19 @@ $(document).ready(function() {
     var formUrl =
       "https://docs.google.com/forms/u/1/d/e/1FAIpQLScVHgg3n7o6lIsutXrkNbrYHmJ-5PwyqU6ZrKhI8uIHvEEcFA/formResponse";
     $("main").html(loading);
-    $.post(
-      formUrl,
-      {
-        "entry.1998458345": name,
-        "entry.179782795": description,
-        "entry.1008143291": amount
-      },
-      function(data) {}
-    );
+    var postData =
+      "entry.1998458345=" +
+      encodeURI(name) +
+      "&entry.179782795=" +
+      encodeURI(description) +
+      "entry.1008143291=" +
+      encodeURI(amount);
+    $.ajax({
+      data: postdata,
+      type: "POST",
+      url: formUrl,
+      contentType: "application/x-www-form-urlencoded;charset=utf-8"
+    });
     setTimeout(function() {
       $("main").html(result);
     }, 1000);
