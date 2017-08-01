@@ -23,7 +23,7 @@ $(document).ready(function() {
       "entry.1008143291=" +
       encodeURI(amount);
     $.ajax({
-      data: postdata,
+      data: postData,
       type: "POST",
       url: formUrl,
       contentType: "application/x-www-form-urlencoded;charset=utf-8"
