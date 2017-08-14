@@ -160,6 +160,8 @@ $(document).ready(function() {
         var actors = data[0].actors == "" ? "N/A" : data[0].actors;
         var genres = data[0].genres == "" ? "N/A" : data[0].genres;
         var poster = "https://backend.filmhub.io" + data[0].poster;
+        var quality = data[0].quality;
+        var duration = data[0].duration;
         $("title").text(nameVi);
         $(".section-right .title a").text(nameVi);
         $(".date").text(nameEnAndYear);
@@ -168,6 +170,8 @@ $(document).ready(function() {
         $("li.tt:contains('Diễn Viên')").next().text(actors);
         $("li.tt:contains('Thể Loại')").next().text(genres);
         $(".section-left .image img").attr("src", poster);
+        $(".kieu li").text(quality);
+        $(".time.wl").text("Thời lượng: " + duration);
       }
     });
 
