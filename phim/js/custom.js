@@ -148,6 +148,12 @@ $(document).ready(function() {
   // huyblack code here
   var movieId = getQueryVariable("p");
   if (movieId) {
+    $("#gen-fb").html(
+      '<div class="fb-comments" data-href="' +
+        "https://achia-app.github.io/phim/?p=" +
+        movieId +
+        '" data-numposts="5" fb-xfbml-state="rendered" data-width="100%" data-colorscheme="dark"></div>'
+    );
     $.get("https://backend.filmhub.io/api/movies/" + movieId, function(data) {
       console.log(data);
       if (data.length != 0) {
