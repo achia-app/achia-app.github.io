@@ -146,6 +146,10 @@ $(document).ready(function() {
   });
 
   // huyblack code here
+
+  $(".btn.btn-style1").click(function() {
+    window.location = "https://filmhub.io/";
+  });
   var movieId = getQueryVariable("p");
   if (movieId) {
     $("#gen-fb").html(
